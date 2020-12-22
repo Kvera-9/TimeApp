@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import img_elRoundimage from './images/Servicios_elRoundimage_812940.png';
+import img_elImage from './images/Servicios_elImage_754464.jpg';
 
 export default class Servicios extends Component {
 
   // Properties used by this component:
-  // name, description, image
+  // name, description
 
   constructor(props) {
     super(props);
@@ -32,11 +32,15 @@ export default class Servicios extends Component {
     const style_elBackgroundShape = {
       background: 'rgba(255, 255, 255, 1.000)',
      };
-    const style_elRoundimage = {
-      backgroundImage: 'url('+(this.props.image || img_elRoundimage)+')',
+    const style_elText2 = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'left',
+     };
+    const style_elImage = {
+      backgroundImage: 'url('+img_elImage+')',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50% 50%',
-      backgroundSize: 'contain',
+      backgroundSize: 'cover',
      };
     
     const value_text = this.props.name;
@@ -65,8 +69,14 @@ export default class Servicios extends Component {
         </div>
         
         <div className="layoutFlow">
-          <div className="elRoundimage">
-            <div style={style_elRoundimage} />
+          <div className="elText2">
+            <div className="headlineFont" style={style_elText2}>
+              <div>{this.props.locStrings.servicios_text2_127151}</div>
+            </div>
+          </div>
+          
+          <div className="elImage">
+            <div style={style_elImage} />
           </div>
           
           <div className="elText">

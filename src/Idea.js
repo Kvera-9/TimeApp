@@ -11,8 +11,8 @@ export default class Idea extends Component {
     this.state = {
       text: (<div>El valor del tiempo!</div>),
       text_plainText: "El valor del tiempo!",
-      textcopy: (<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum. Vestibulum cursus, ipsum vel placerat tincidunt, felis orci porttitor orci, non ullamcorper arcu leo in enim. Morbi mattis tortor lectus, vitae interdum enim consequat sit amet. Quisque in arcu libero. Praesent eu elit arcu.</div>),
-      textcopy_plainText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum. Vestibulum cursus, ipsum vel placerat tincidunt, felis orci porttitor orci, non ullamcorper arcu leo in enim. Morbi mattis tortor lectus, vitae interdum enim consequat sit amet. Quisque in arcu libero. Praesent eu elit arcu.",
+      textcopy: (<div>El tiempo es un valor al que muy a menudo no le damos la importancia que debería. Y es que éste es uno de los recursos más <br />valiosos de los que disponemos, ya que una vez gastado no se puede volver a recuperar.</div>),
+      textcopy_plainText: "El tiempo es un valor al que muy a menudo no le damos la importancia que debería. Y es que éste es uno de los recursos más \nvaliosos de los que disponemos, ya que una vez gastado no se puede volver a recuperar.",
     };
   }
 
@@ -58,7 +58,7 @@ export default class Idea extends Component {
           
           <div className="elTextCopy">
             <div className="baseFont" style={style_elTextCopy}>
-              <div>{this.state.textcopy}</div>
+              <div><div dangerouslySetInnerHTML={{__html: this.state.textcopy_plainText.replace(/\n/g, '<br>')}}></div></div>
             </div>
           </div>
           

@@ -1,6 +1,6 @@
 {
   "name": "TimeApp",
-  "version": "0.1.0",
+  "version": "0.1.1-alpha",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",

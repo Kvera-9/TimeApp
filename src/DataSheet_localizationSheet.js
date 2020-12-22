@@ -135,6 +135,11 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item['key'] = "map_text_895751";
     item['en'] = "We’re based in Silicon Valley";
     
+    item = {};
+    this.items.push(item);
+    item['key'] = "servicios_text2_127151";
+    item['en'] = "              Propuesta 1";
+    
     let storedItems = localStorage.getItem(this.id);
     if (storedItems != null) {
       this.items = JSON.parse(storedItems);

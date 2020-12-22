@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-export default class Nuestroequipo extends Component {
+export default class Nuestrapasion extends Component {
 
   // This component doesn't use any properties
 
@@ -9,8 +9,8 @@ export default class Nuestroequipo extends Component {
     super(props);
     
     this.state = {
-      textblock: (<div>¿Alguna vez te has planteado que tu tiempo puede ser una moneda de cambio?<br /></div>),
-      textblock_plainText: "¿Alguna vez te has planteado que tu tiempo puede ser una moneda de cambio?\n",
+      textblock: (<div>Nuestra Pasión</div>),
+      textblock_plainText: "Nuestra Pasión",
     };
   }
 
@@ -26,23 +26,23 @@ export default class Nuestroequipo extends Component {
   render() {
     
     const style_elBackgroundShape = {
-      background: 'rgba(255, 255, 255, 1.000)',
+      background: 'rgba(0, 145, 156, 1.000)',
      };
     const style_elTextBlock = {
       fontSize: 30.1,
-      color: 'rgba(0, 0, 0, 0.8500)',
+      color: '#feffff',
       textAlign: 'center',
      };
     
     return (
-      <div className="Nuestroequipo">
+      <div className="Nuestrapasion">
         <div className="background">
           <div className="containerMinHeight elBackgroundShape" style={style_elBackgroundShape} />
         </div>
         
         <div className="foreground">
           <div className="font-AppleSystemUIFont  elTextBlock" style={style_elTextBlock}>
-            <div><div dangerouslySetInnerHTML={{__html: this.state.textblock_plainText.replace(/\n/g, '<br>')}}></div></div>
+            <div>{this.state.textblock}</div>
           </div>
         </div>
       </div>

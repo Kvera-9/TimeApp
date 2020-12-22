@@ -1,5 +1,15 @@
 /* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
 @font-face {
+  font-family: 'ArialHebrew';
+  src: url('fonts/ArialHebrew.ttf');
+}
+
+.font-arialHebrew {
+  font-family: 'ArialHebrew', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+}
+
+/* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
+@font-face {
   font-family: '.AppleSystemUIFont';
   src: url('fonts/SFNS.ttf');
 }
@@ -29,7 +39,7 @@
 }
 
 .App { /* Base font style */
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'ArialHebrew', sans-serif;
   font-size: 15.1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,7 +48,7 @@
 }
 
 .App .baseFont * { /* Base font style override for UI framework components */
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'ArialHebrew', sans-serif;
   font-size: 15.1px;
 }
 
@@ -63,19 +73,19 @@
 }
 
 .App .primaryTextColor {
-  color: #bee9ee;
+  color: #16b7b8;
 }
 
 .App .primaryBg {
-  background-color: #bee9ee;
+  background-color: #16b7b8;
 }
 
 .App .highlightTextColor {
-  color: #0093d5;
+  color: #01fdfc;
 }
 
 .App .highlightBg {
-  background-color: #0093d5;
+  background-color: #01fdfc;
 }
 
 @media (display-mode: standalone) {
@@ -92,16 +102,16 @@
     margin-bottom: 0;
 }
 .mui-btn--primary {
-    background-color: #bee9ee;
+    background-color: #16b7b8;
 }
 .mui-btn--primary:active, .mui-btn--primary:focus, .mui-btn--primary:hover {
-    background-color: #c3ebf0;
+    background-color: #1fbcbf;
 }
 .mui-btn--accent {
-    background-color: #0093d5;
+    background-color: #01fdfc;
 }
 .mui-btn--accent:active, .mui-btn--accent:focus, .mui-btn--accent:hover {
-    background-color: #069fda;
+    background-color: #00fbfc;
 }
 .mui-textfield {  /* Reset UI framework styling that affects layout */
     padding-top: 0;
@@ -173,7 +183,7 @@
   font-size: 19.4px;
 }
 .App .navBar {
-  background-color: #bee9ee;
+  background-color: #16b7b8;
   color: black;
   position: fixed;
   left: 0;
@@ -439,13 +449,13 @@
   
 
 /* This component has a fixed-size layout */
-  .Razón {
+  .Razon {
     width: 100%; /* This component was designed using a width of 367px */
     height: 100%;
   }
 
 
-  .Razón > .background > .elBackgroundShape {
+  .Razon > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -455,7 +465,7 @@
   }
 
 
-  .Razón > .background > .elAidanmeyer129855 {
+  .Razon > .background > .elAidanmeyer129855 {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -465,28 +475,28 @@
   }
 
 
-  .Razón > .layoutFlow > .elRectangle {
+  .Razon > .layoutFlow > .elRectangle {
     position: relative;
     margin-top: 0px;
     margin-left: 13px;
     margin-right: 9px;
     width: calc(100.0% - 22px);
   }
-  .Razón > .layoutFlow > .elRectangle > * { 
+  .Razon > .layoutFlow > .elRectangle > * { 
     width: 100%;
   height: 42px;
   }
   
 
 
-  .Razón > .layoutFlow > .elText {
+  .Razon > .layoutFlow > .elText {
     position: relative;
     margin-top: -36px;
     margin-left: 4px;
     margin-right: 11px;
     width: calc(100.0% - 16px);
   }
-  .Razón > .layoutFlow > .elText > * { 
+  .Razon > .layoutFlow > .elText > * { 
     width: 100%;
   }
   
@@ -516,9 +526,9 @@
   .Logo > .foreground > .elLogowhite {
     position: absolute;
     left: 19px;
-    top: 34px;
-    width: 126px;
-    height: calc(100% + -3.0% + -58.3px);
+    top: 30px;
+    width: 162px;
+    height: calc(100% + -3.0% + -54.7px);
   }
 
 
@@ -548,14 +558,29 @@
   }
 
 
-  .Servicios > .layoutFlow > .elRoundimage {
+  .Servicios > .layoutFlow > .elText2 {
+    overflow: hidden;
     position: relative;
-    margin-top: 40px;
-    width: 128px;
-    margin-left: calc(50.5% - 64px);
+    margin-top: 16px;
+    margin-left: calc(50.0% - 130px);
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
   }
-  .Servicios > .layoutFlow > .elRoundimage > * { 
-  width: 128px;
+  .Servicios > .layoutFlow > .elText2 > * { 
+    width: 100%;
+  }
+  
+
+
+  .Servicios > .layoutFlow > .elImage {
+    position: relative;
+    margin-top: 22px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .Servicios > .layoutFlow > .elImage > * { 
+    width: 100%;
   height: 128px;
   }
   
@@ -601,18 +626,18 @@
   
 
 /* This component has a fixed-size layout */
-  .Regístrate {
+  .Registro {
     min-height: 453px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 517px */
     height: 100%;
   }
-  .Regístrate > .background > .containerMinHeight {
+  .Registro > .background > .containerMinHeight {
     min-height: 453px;
   }
 
 
-  .Regístrate > .background > .elBG {
+  .Registro > .background > .elBG {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -622,19 +647,19 @@
   }
 
 
-.Regístrate > .foreground > .elEmailField input {
+.Registro > .foreground > .elEmailField input {
   color: #feffff;
 }
 
-.Regístrate > .foreground > .elEmailField input::input-placeholder {
+.Registro > .foreground > .elEmailField input::input-placeholder {
   color: rgba(254, 255, 255, 0.5000);
 }
 
-.Regístrate > .foreground > .elEmailField input::placeholder {
+.Registro > .foreground > .elEmailField input::placeholder {
   color: rgba(254, 255, 255, 0.5000);
 }
 
-  .Regístrate > .foreground > .elEmailField {
+  .Registro > .foreground > .elEmailField {
     position: absolute;
     left: calc(50.0% + 0px - 113px);
     top: calc(0px + 50.0%);
@@ -642,20 +667,20 @@
     height: 34px;
   }
 
-.Regístrate .elSendButton {
+.Registro .elSendButton {
   cursor: pointer;
   border: 0.0px solid transparent;
   border-radius: 3.4px;
 }
 
-.Regístrate .elSendButton:focus {
+.Registro .elSendButton:focus {
   box-shadow: 0 0 5px rgba(36, 37, 36, 0.5000);
   outline: none;
 }
 
 
 
-  .Regístrate > .foreground > .elSendButton {
+  .Registro > .foreground > .elSendButton {
     line-height: 34px;
     position: absolute;
     left: calc(50.0% + 0px - 113px);
@@ -665,7 +690,7 @@
   }
 
 
-  .Regístrate > .foreground > .elHeader {
+  .Registro > .foreground > .elHeader {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -766,7 +791,7 @@
     right: 0px;
     top: 126px;
     width: 100.0%;
-    height: 24px;
+    height: 20px;
   }
 
 /* This component has a fixed-size layout */
@@ -882,18 +907,18 @@
   
 
 /* This component has a fixed-size layout */
-  .NuestroEquipo {
+  .Nuestroequipo {
     min-height: 87px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 186px */
     height: 100%;
   }
-  .NuestroEquipo > .background > .containerMinHeight {
+  .Nuestroequipo > .background > .containerMinHeight {
     min-height: 87px;
   }
 
 
-  .NuestroEquipo > .background > .elBackgroundShape {
+  .Nuestroequipo > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -903,7 +928,7 @@
   }
 
 
-  .NuestroEquipo > .foreground > .elTextBlock {
+  .Nuestroequipo > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -914,18 +939,18 @@
   }
 
 /* This component has a fixed-size layout */
-  .NuestraMisión {
+  .Nuestramision {
     min-height: 87px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 186px */
     height: 100%;
   }
-  .NuestraMisión > .background > .containerMinHeight {
+  .Nuestramision > .background > .containerMinHeight {
     min-height: 87px;
   }
 
 
-  .NuestraMisión > .background > .elBackgroundShape {
+  .Nuestramision > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -935,7 +960,7 @@
   }
 
 
-  .NuestraMisión > .foreground > .elTextBlock {
+  .Nuestramision > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -946,18 +971,18 @@
   }
 
 /* This component has a fixed-size layout */
-  .NuestraPasión {
+  .Nuestrapasion {
     min-height: 87px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 186px */
     height: 100%;
   }
-  .NuestraPasión > .background > .containerMinHeight {
+  .Nuestrapasion > .background > .containerMinHeight {
     min-height: 87px;
   }
 
 
-  .NuestraPasión > .background > .elBackgroundShape {
+  .Nuestrapasion > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -967,7 +992,7 @@
   }
 
 
-  .NuestraPasión > .foreground > .elTextBlock {
+  .Nuestrapasion > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -1133,56 +1158,57 @@
   }
 
 /* This component has a fixed-size layout */
-  .AboutOurPassion {
+  .Textopasion {
     width: 100%; /* This component was designed using a width of 320px */
     height: 100%;
   }
 
 
-  .AboutOurPassion > .background > .elBackgroundShape {
+  .Textopasion > .background > .elBackgroundShape {
     position: absolute;
-    left: 0px;
-    right: 0px;
+    left: -6px;
+    right: 6px;
     top: 0px;
-    width: 100.0%;
+    width: calc(100.0% - -6px - 6px);
     height: 100%;
   }
 
 
-  .AboutOurPassion > .layoutFlow > .elTextCopy {
+  .Textopasion > .layoutFlow > .elTextCopy {
     position: relative;
     margin-top: 10px;
     margin-left: 22px;
     margin-right: 23px;
     width: calc(100.0% - 45px);
   }
-  .AboutOurPassion > .layoutFlow > .elTextCopy > * { 
+  .Textopasion > .layoutFlow > .elTextCopy > * { 
     width: 100%;
   }
   
 
 
-  .AboutOurPassion > .layoutFlow > .elImage {
+  .Textopasion > .layoutFlow > .elImage2 {
     position: relative;
     margin-top: 8px;
-    margin-left: 22px;
-    margin-right: 23px;
-    width: calc(100.0% - 45px);
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
   }
-  .AboutOurPassion > .layoutFlow > .elImage > * { 
+  .Textopasion > .layoutFlow > .elImage2 > * { 
     width: 100%;
+  height: 270px;
   }
   
 
 
-  .AboutOurPassion > .layoutFlow > .elTextCopy2 {
+  .Textopasion > .layoutFlow > .elTextCopy2 {
     position: relative;
     margin-top: 10px;
     margin-left: 22px;
     margin-right: 23px;
     width: calc(100.0% - 45px);
   }
-  .AboutOurPassion > .layoutFlow > .elTextCopy2 > * { 
+  .Textopasion > .layoutFlow > .elTextCopy2 > * { 
     width: 100%;
   }
   
@@ -1816,7 +1842,7 @@
 /* Narrowest size for this element's responsive layout */
   .StartScreen > .layoutFlow > .elWhatWeDo {
     position: relative;
-    margin-top: 0px;
+    margin-top: -2px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1828,7 +1854,7 @@
 @media (min-width: 568px) {
   .StartScreen > .layoutFlow > .elWhatWeDo {
     position: relative;
-    margin-top: 0px;
+    margin-top: -2px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1841,7 +1867,7 @@
 @media (min-width: 768px) {
   .StartScreen > .layoutFlow > .elWhatWeDo {
     position: relative;
-    margin-top: 0px;
+    margin-top: -2px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1854,7 +1880,7 @@
 @media (min-width: 1024px) {
   .StartScreen > .layoutFlow > .elWhatWeDo {
     position: relative;
-    margin-top: 0px;
+    margin-top: -2px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1968,7 +1994,7 @@
   }
   
   .StartScreen > .layoutFlow > .elAboutOurPassion > .background > .containerMinHeight {
-    min-height: 442px;
+    min-height: 557px;
   }
 
 @media (min-width: 568px) {
@@ -1984,7 +2010,7 @@
   }
   
   .StartScreen > .layoutFlow > .elAboutOurPassion > .background > .containerMinHeight {
-    min-height: 442px;
+    min-height: 557px;
   }
 
 }
@@ -2001,7 +2027,7 @@
   }
   
   .StartScreen > .layoutFlow > .elAboutOurPassion > .background > .containerMinHeight {
-    min-height: 439px;
+    min-height: 554px;
   }
 
 }
@@ -2018,7 +2044,7 @@
   }
   
   .StartScreen > .layoutFlow > .elAboutOurPassion > .background > .containerMinHeight {
-    min-height: 439px;
+    min-height: 554px;
   }
 
 }

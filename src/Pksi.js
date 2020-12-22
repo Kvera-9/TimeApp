@@ -11,8 +11,8 @@ export default class Pksi extends Component {
     this.state = {
       text: (<div>El intercambio de habilidades </div>),
       text_plainText: "El intercambio de habilidades ",
-      textcopy: (<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum. Vestibulum cursus, ipsum vel placerat tincidunt, felis orci porttitor orci, non ullamcorper arcu leo in enim. Morbi mattis tortor lectus, vitae interdum enim consequat sit amet. Quisque in arcu libero. Praesent eu elit arcu.</div>),
-      textcopy_plainText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum. Vestibulum cursus, ipsum vel placerat tincidunt, felis orci porttitor orci, non ullamcorper arcu leo in enim. Morbi mattis tortor lectus, vitae interdum enim consequat sit amet. Quisque in arcu libero. Praesent eu elit arcu.",
+      textcopy: (<div>Cada uno de nosotros tenemos una esencia que nos hace únicos. Siempre podemos aprender algo nuevo de los demás; nuestra sociedad se ha construïdo  gracias a la cooperación y la transferencia de conocimientos. A partir de ésta aplicación queremos poner en práctica ésta filosofía y facilitar la vida de la gente.</div>),
+      textcopy_plainText: "Cada uno de nosotros tenemos una esencia que nos hace únicos. Siempre podemos aprender algo nuevo de los demás; nuestra sociedad se ha construïdo  gracias a la cooperación y la transferencia de conocimientos. A partir de ésta aplicación queremos poner en práctica ésta filosofía y facilitar la vida de la gente.",
     };
   }
 
