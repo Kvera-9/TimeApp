@@ -1,233 +1,159 @@
+import React, { Component } from 'react';
+import './App.css';
 
-import React from 'react';
-import { fade, makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
-import Badge from '@material-ui/core/Badge';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
+export default class Menu extends Component {
 
-const useStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
+  // This component doesn't use any properties
+
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      text: (<div>Inicio</div>),
+      text_plainText: "Inicio",
+      textcopy4: (<div>Registro</div>),
+      textcopy4_plainText: "Registro",
+      textcopy2: (<div>Login</div>),
+      textcopy2_plainText: "Login",
+      textcopy3: (<div>Sobre Nosotros</div>),
+      textcopy3_plainText: "Sobre Nosotros",
+    };
+  }
+
+  componentDidMount() {
+  }
+
+  componentWillUnmount() {
+  }
+
+  componentDidUpdate() {
+  }
+
+  onClick_elTextCopy2 = (ev) => {
+    // Go to screen 'Login'
+    this.props.appActions.goToScreen('login', { transitionId: 'fadeIn' });
+  
+  }
+  
+  
+  onClick_elHotspot = (ev) => {
+    alert("This is a demo. You need to replace the links with real buttons in React Studio");
+    
+    
+  
+  }
+  
+  
+  render() {
+    
+    const style_elBackgroundShape = {
+      background: 'rgba(254, 255, 255, 1.000)',
+     };
+    
+    const style_elLine = {
+      borderTop: '1px solid rgba(0, 0, 0, 0.6976)',
+     };
+    const style_elText = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'center',
+     };
+    
+    const style_elLineCopy4 = {
+      borderTop: '1px solid rgba(0, 0, 0, 0.6976)',
+     };
+    const style_elTextCopy4 = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'center',
+     };
+    
+    const style_elLineCopy = {
+      borderTop: '1px solid rgba(0, 0, 0, 0.6976)',
+     };
+    const style_elTextCopy2 = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'center',
+      cursor: 'pointer',
+      pointerEvents: 'auto',
+     };
+    
+    const style_elLineCopy2 = {
+      borderTop: '1px solid rgba(0, 0, 0, 0.6976)',
+     };
+    const style_elTextCopy3 = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'center',
+     };
+    
+    const style_elLineCopy5 = {
+      borderTop: '1px solid rgba(0, 0, 0, 0.6976)',
+     };
+    
+    const style_elHotspot = {
       display: 'block',
-    },
-  },
-  search: {
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(3),
-      width: 'auto',
-    },
-  },
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  inputRoot: {
-    color: 'inherit',
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
-    },
-  },
-  sectionDesktop: {
-    display: 'none',
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
-    },
-  },
-  sectionMobile: {
-    display: 'flex',
-    [theme.breakpoints.up('md')]: {
+      textTransform: 'uppercase',
+      backgroundColor: 'transparent',
+      cursor: 'pointer',
+      pointerEvents: 'auto',
       display: 'none',
-    },
-  },
-}));
-
-export default function PrimarySearchAppBar() {
-  const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="secondary">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="show 11 new notifications" color="inherit">
-          <Badge badgeContent={11} color="secondary">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
-    </Menu>
-  );
-
-  return (
-    <div className={classes.grow}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
-          </Typography>
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
+     };
+    
+    return (
+      <div className="Menu">
+        <div className="background">
+          <div className="containerMinHeight elBackgroundShape" style={style_elBackgroundShape} />
+        </div>
+        
+        <div className="layoutFlow">
+          <div className="elLine">
+            <div style={style_elLine} />
+          </div>
+          
+          <div className="elText">
+            <div className="headlineFont" style={style_elText}>
+              <div>{this.state.text}</div>
             </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
           </div>
-          <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <MailIcon />
-              </Badge>
-            </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
-            <IconButton
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
+          
+          <div className="elLineCopy4">
+            <div style={style_elLineCopy4} />
           </div>
-          <div className={classes.sectionMobile}>
-            <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
+          
+          <div className="elTextCopy4">
+            <div className="headlineFont" style={style_elTextCopy4}>
+              <div>{this.state.textcopy4}</div>
+            </div>
           </div>
-        </Toolbar>
-      </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
-    </div>
-  );
+          
+          <div className="elLineCopy">
+            <div style={style_elLineCopy} />
+          </div>
+          
+          <div className="elTextCopy2">
+            <div className="headlineFont" style={style_elTextCopy2} onClick={this.onClick_elTextCopy2} >
+              <div>{this.state.textcopy2}</div>
+            </div>
+          </div>
+          
+          <div className="elLineCopy2">
+            <div style={style_elLineCopy2} />
+          </div>
+          
+          <div className="elTextCopy3">
+            <div className="headlineFont" style={style_elTextCopy3}>
+              <div>{this.state.textcopy3}</div>
+            </div>
+          </div>
+          
+          <div className="elLineCopy5">
+            <div style={style_elLineCopy5} />
+          </div>
+        </div>
+        
+        <div className="foreground">
+          <div className="actionFont containerMinHeight elHotspot" style={style_elHotspot} onClick={this.onClick_elHotspot}  />
+        </div>
+      </div>
+    )
+  }
+  
 }

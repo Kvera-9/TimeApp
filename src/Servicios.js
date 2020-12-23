@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import img_elImage from './images/Servicios_elImage_754464.jpg';
+import img_elRoundimage from './images/Servicios_elRoundimage_242106.jpg';
 
 export default class Servicios extends Component {
 
@@ -32,12 +32,8 @@ export default class Servicios extends Component {
     const style_elBackgroundShape = {
       background: 'rgba(255, 255, 255, 1.000)',
      };
-    const style_elText2 = {
-      color: 'rgba(0, 0, 0, 0.8500)',
-      textAlign: 'left',
-     };
-    const style_elImage = {
-      backgroundImage: 'url('+img_elImage+')',
+    const style_elRoundimage = {
+      backgroundImage: 'url('+img_elRoundimage+')',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50% 50%',
       backgroundSize: 'cover',
@@ -69,14 +65,8 @@ export default class Servicios extends Component {
         </div>
         
         <div className="layoutFlow">
-          <div className="elText2">
-            <div className="headlineFont" style={style_elText2}>
-              <div>{this.props.locStrings.servicios_text2_127151}</div>
-            </div>
-          </div>
-          
-          <div className="elImage">
-            <div style={style_elImage} />
+          <div className="elRoundimage">
+            <div style={style_elRoundimage} />
           </div>
           
           <div className="elText">

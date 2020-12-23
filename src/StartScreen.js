@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import Eslogan from './Eslogan';
-import Razon from './Razon';
-import Nuestroequipo from './Nuestroequipo';
+import Razón from './Razón';
+import NuestroEquipo from './NuestroEquipo';
 import Servicios from './Servicios';
-import Nuestramision from './Nuestramision';
+import NuestraMisión from './NuestraMisión';
 import Idea from './Idea';
 import Pksi from './Pksi';
-import Nuestrapasion from './Nuestrapasion';
-import Textopasion from './Textopasion';
-import Registro from './Registro';
+import NuestraPasión from './NuestraPasión';
+import AboutOurPassion from './AboutOurPassion';
+import Regístrate from './Regístrate';
 import Map from './Map';
 import SocialLinks from './SocialLinks';
 import btn_icon_625800 from './images/btn_icon_625800.png';
@@ -174,13 +174,13 @@ export default class StartScreen extends Component {
           
           <div className="hasNestedComps elJoinUs">
             <div>
-              <Razon {...this.props} ref={(el)=> this._elJoinUs = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <Razón {...this.props} ref={(el)=> this._elJoinUs = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
           <div className="hasNestedComps elTeamHeadline">
             <div>
-              <Nuestroequipo {...this.props} ref={(el)=> this._elTeamHeadline = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <NuestroEquipo {...this.props} ref={(el)=> this._elTeamHeadline = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
@@ -200,7 +200,7 @@ export default class StartScreen extends Component {
           
           <div className="hasNestedComps elOurMission">
             <div>
-              <Nuestramision {...this.props} ref={(el)=> this._elOurMission = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <NuestraMisión {...this.props} ref={(el)=> this._elOurMission = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
@@ -217,19 +217,19 @@ export default class StartScreen extends Component {
           
           <div className="hasNestedComps elOurPassion">
             <div>
-              <Nuestrapasion {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <NuestraPasión {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
           <div className="hasNestedComps elAboutOurPassion">
             <div>
-              <Textopasion {...this.props} ref={(el)=> this._elAboutOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <AboutOurPassion {...this.props} ref={(el)=> this._elAboutOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
           <div className="hasNestedComps elContactUs">
             <div>
-              <Registro {...this.props} ref={(el)=> this._elContactUs = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <Regístrate {...this.props} ref={(el)=> this._elContactUs = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           

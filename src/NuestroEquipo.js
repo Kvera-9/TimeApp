@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-export default class Nuestroequipo extends Component {
+export default class NuestroEquipo extends Component {
 
   // This component doesn't use any properties
 
@@ -35,7 +35,7 @@ export default class Nuestroequipo extends Component {
      };
     
     return (
-      <div className="Nuestroequipo">
+      <div className="NuestroEquipo">
         <div className="background">
           <div className="containerMinHeight elBackgroundShape" style={style_elBackgroundShape} />
         </div>

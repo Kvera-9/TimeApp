@@ -137,8 +137,23 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     
     item = {};
     this.items.push(item);
-    item['key'] = "servicios_text2_127151";
-    item['en'] = "              Propuesta 1";
+    item['key'] = "login1_text_241076";
+    item['en'] = "Bienvenido a la era del tiempo";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "login1_validator_772924";
+    item['en'] = " ";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "login1_button_137024";
+    item['en'] = "Ir a la pagina de inicio";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "login_textblock_833318";
+    item['en'] = " ";
     
     let storedItems = localStorage.getItem(this.id);
     if (storedItems != null) {

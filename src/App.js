@@ -6,8 +6,10 @@ import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import * as util from 'util';
 import './App.css';
 import StartScreen from './StartScreen.js';
+import LoginScreen from './LoginScreen.js';
 import DataSheet_localizationSheet from './DataSheet_localizationSheet.js';
 import DataSheet_team from './DataSheet_team.js';
+import DataSheet_sheet2 from './DataSheet_sheet2.js';
 
 
 class App extends Component {
@@ -17,10 +19,12 @@ class App extends Component {
     this.dataSheets = {};
     this.dataSheets['localizationSheet'] = new DataSheet_localizationSheet('localizationSheet', this.dataSheetDidUpdate);
     this.dataSheets['team'] = new DataSheet_team('team', this.dataSheetDidUpdate);
+    this.dataSheets['sheet2'] = new DataSheet_sheet2('sheet2', this.dataSheetDidUpdate);
     this.dataSheetLoaded = {};
 
     this.dataSlots = {};
     this.dataSlots['ds_activeLang'] = "es";
+    this.dataSlots['ds_username'] = "";
 
     this.updateLocalizationFromDataSheet(this.dataSheets['localizationSheet']);
 
@@ -138,21 +142,27 @@ class App extends Component {
           screenFormatId: this.state.screenFormatId
         },
         'ds_activeLang': this.dataSlots['ds_activeLang'],
+        'ds_username': this.dataSlots['ds_username'],
       };
       switch (screenId) {
         default:
           return null;
         case 'start':
           return (<StartScreen {...screenProps} />)
+        case 'login':
+          return (<LoginScreen {...screenProps} />)
       }
     }
 
     return (
       <div className="App">
         <Switch>
-          <Route path="/" render={(props) => makeElementForScreen('start', props.location.state, true, true)} exact />
+          <Route path="/" render={(props) => makeElementForScreen('login', props.location.state, true, true)} exact />
           <Route path="/start" render={(props) => {
             return makeElementForScreen('start', props.location.state, true, true);
+          }} />
+          <Route path="/login" render={(props) => {
+            return makeElementForScreen('login', props.location.state, true, true);
           }} />
         </Switch>
       </div>

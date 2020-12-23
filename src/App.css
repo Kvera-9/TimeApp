@@ -1,15 +1,5 @@
 /* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
 @font-face {
-  font-family: 'ArialHebrew';
-  src: url('fonts/ArialHebrew.ttf');
-}
-
-.font-arialHebrew {
-  font-family: 'ArialHebrew', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
-}
-
-/* Font copied in place by React Studio. Please check that your license for this font file permits embedding on a website. */
-@font-face {
   font-family: '.AppleSystemUIFont';
   src: url('fonts/SFNS.ttf');
 }
@@ -39,7 +29,7 @@
 }
 
 .App { /* Base font style */
-  font-family: 'ArialHebrew', sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-size: 15.1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,7 +38,7 @@
 }
 
 .App .baseFont * { /* Base font style override for UI framework components */
-  font-family: 'ArialHebrew', sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-size: 15.1px;
 }
 
@@ -73,19 +63,19 @@
 }
 
 .App .primaryTextColor {
-  color: #16b7b8;
+  color: #bee9ee;
 }
 
 .App .primaryBg {
-  background-color: #16b7b8;
+  background-color: #bee9ee;
 }
 
 .App .highlightTextColor {
-  color: #01fdfc;
+  color: #0093d5;
 }
 
 .App .highlightBg {
-  background-color: #01fdfc;
+  background-color: #0093d5;
 }
 
 @media (display-mode: standalone) {
@@ -102,16 +92,16 @@
     margin-bottom: 0;
 }
 .mui-btn--primary {
-    background-color: #16b7b8;
+    background-color: #bee9ee;
 }
 .mui-btn--primary:active, .mui-btn--primary:focus, .mui-btn--primary:hover {
-    background-color: #1fbcbf;
+    background-color: #c3ebf0;
 }
 .mui-btn--accent {
-    background-color: #01fdfc;
+    background-color: #0093d5;
 }
 .mui-btn--accent:active, .mui-btn--accent:focus, .mui-btn--accent:hover {
-    background-color: #00fbfc;
+    background-color: #069fda;
 }
 .mui-textfield {  /* Reset UI framework styling that affects layout */
     padding-top: 0;
@@ -183,7 +173,7 @@
   font-size: 19.4px;
 }
 .App .navBar {
-  background-color: #16b7b8;
+  background-color: #bee9ee;
   color: black;
   position: fixed;
   left: 0;
@@ -449,13 +439,13 @@
   
 
 /* This component has a fixed-size layout */
-  .Razon {
+  .Razón {
     width: 100%; /* This component was designed using a width of 367px */
     height: 100%;
   }
 
 
-  .Razon > .background > .elBackgroundShape {
+  .Razón > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -465,7 +455,7 @@
   }
 
 
-  .Razon > .background > .elAidanmeyer129855 {
+  .Razón > .background > .elAidanmeyer129855 {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -475,28 +465,28 @@
   }
 
 
-  .Razon > .layoutFlow > .elRectangle {
+  .Razón > .layoutFlow > .elRectangle {
     position: relative;
     margin-top: 0px;
     margin-left: 13px;
     margin-right: 9px;
     width: calc(100.0% - 22px);
   }
-  .Razon > .layoutFlow > .elRectangle > * { 
+  .Razón > .layoutFlow > .elRectangle > * { 
     width: 100%;
   height: 42px;
   }
   
 
 
-  .Razon > .layoutFlow > .elText {
+  .Razón > .layoutFlow > .elText {
     position: relative;
     margin-top: -36px;
     margin-left: 4px;
     margin-right: 11px;
     width: calc(100.0% - 16px);
   }
-  .Razon > .layoutFlow > .elText > * { 
+  .Razón > .layoutFlow > .elText > * { 
     width: 100%;
   }
   
@@ -526,9 +516,9 @@
   .Logo > .foreground > .elLogowhite {
     position: absolute;
     left: 19px;
-    top: 30px;
-    width: 162px;
-    height: calc(100% + -3.0% + -54.7px);
+    top: 34px;
+    width: 174px;
+    height: calc(100% + -3.0% + -45.7px);
   }
 
 
@@ -558,30 +548,15 @@
   }
 
 
-  .Servicios > .layoutFlow > .elText2 {
-    overflow: hidden;
+  .Servicios > .layoutFlow > .elRoundimage {
     position: relative;
-    margin-top: 16px;
-    margin-left: calc(50.0% - 130px);
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
+    margin-top: 15px;
+    width: 139px;
+    margin-left: 64px;
   }
-  .Servicios > .layoutFlow > .elText2 > * { 
-    width: 100%;
-  }
-  
-
-
-  .Servicios > .layoutFlow > .elImage {
-    position: relative;
-    margin-top: 22px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
-  }
-  .Servicios > .layoutFlow > .elImage > * { 
-    width: 100%;
-  height: 128px;
+  .Servicios > .layoutFlow > .elRoundimage > * { 
+  width: 139px;
+  height: 148px;
   }
   
 
@@ -626,18 +601,18 @@
   
 
 /* This component has a fixed-size layout */
-  .Registro {
+  .Regístrate {
     min-height: 453px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 517px */
     height: 100%;
   }
-  .Registro > .background > .containerMinHeight {
+  .Regístrate > .background > .containerMinHeight {
     min-height: 453px;
   }
 
 
-  .Registro > .background > .elBG {
+  .Regístrate > .background > .elBG {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -647,19 +622,19 @@
   }
 
 
-.Registro > .foreground > .elEmailField input {
+.Regístrate > .foreground > .elEmailField input {
   color: #feffff;
 }
 
-.Registro > .foreground > .elEmailField input::input-placeholder {
+.Regístrate > .foreground > .elEmailField input::input-placeholder {
   color: rgba(254, 255, 255, 0.5000);
 }
 
-.Registro > .foreground > .elEmailField input::placeholder {
+.Regístrate > .foreground > .elEmailField input::placeholder {
   color: rgba(254, 255, 255, 0.5000);
 }
 
-  .Registro > .foreground > .elEmailField {
+  .Regístrate > .foreground > .elEmailField {
     position: absolute;
     left: calc(50.0% + 0px - 113px);
     top: calc(0px + 50.0%);
@@ -667,20 +642,20 @@
     height: 34px;
   }
 
-.Registro .elSendButton {
+.Regístrate .elSendButton {
   cursor: pointer;
   border: 0.0px solid transparent;
   border-radius: 3.4px;
 }
 
-.Registro .elSendButton:focus {
+.Regístrate .elSendButton:focus {
   box-shadow: 0 0 5px rgba(36, 37, 36, 0.5000);
   outline: none;
 }
 
 
 
-  .Registro > .foreground > .elSendButton {
+  .Regístrate > .foreground > .elSendButton {
     line-height: 34px;
     position: absolute;
     left: calc(50.0% + 0px - 113px);
@@ -690,7 +665,7 @@
   }
 
 
-  .Registro > .foreground > .elHeader {
+  .Regístrate > .foreground > .elHeader {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -791,7 +766,7 @@
     right: 0px;
     top: 126px;
     width: 100.0%;
-    height: 20px;
+    height: 24px;
   }
 
 /* This component has a fixed-size layout */
@@ -907,18 +882,18 @@
   
 
 /* This component has a fixed-size layout */
-  .Nuestroequipo {
+  .NuestroEquipo {
     min-height: 87px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 186px */
     height: 100%;
   }
-  .Nuestroequipo > .background > .containerMinHeight {
+  .NuestroEquipo > .background > .containerMinHeight {
     min-height: 87px;
   }
 
 
-  .Nuestroequipo > .background > .elBackgroundShape {
+  .NuestroEquipo > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -928,7 +903,7 @@
   }
 
 
-  .Nuestroequipo > .foreground > .elTextBlock {
+  .NuestroEquipo > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -939,18 +914,18 @@
   }
 
 /* This component has a fixed-size layout */
-  .Nuestramision {
+  .NuestraMisión {
     min-height: 87px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 186px */
     height: 100%;
   }
-  .Nuestramision > .background > .containerMinHeight {
+  .NuestraMisión > .background > .containerMinHeight {
     min-height: 87px;
   }
 
 
-  .Nuestramision > .background > .elBackgroundShape {
+  .NuestraMisión > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -960,7 +935,7 @@
   }
 
 
-  .Nuestramision > .foreground > .elTextBlock {
+  .NuestraMisión > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -971,18 +946,18 @@
   }
 
 /* This component has a fixed-size layout */
-  .Nuestrapasion {
+  .NuestraPasión {
     min-height: 87px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 186px */
     height: 100%;
   }
-  .Nuestrapasion > .background > .containerMinHeight {
+  .NuestraPasión > .background > .containerMinHeight {
     min-height: 87px;
   }
 
 
-  .Nuestrapasion > .background > .elBackgroundShape {
+  .NuestraPasión > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -992,7 +967,7 @@
   }
 
 
-  .Nuestrapasion > .foreground > .elTextBlock {
+  .NuestraPasión > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -1158,57 +1133,56 @@
   }
 
 /* This component has a fixed-size layout */
-  .Textopasion {
+  .AboutOurPassion {
     width: 100%; /* This component was designed using a width of 320px */
     height: 100%;
   }
 
 
-  .Textopasion > .background > .elBackgroundShape {
+  .AboutOurPassion > .background > .elBackgroundShape {
     position: absolute;
-    left: -6px;
-    right: 6px;
+    left: 0px;
+    right: 0px;
     top: 0px;
-    width: calc(100.0% - -6px - 6px);
+    width: 100.0%;
     height: 100%;
   }
 
 
-  .Textopasion > .layoutFlow > .elTextCopy {
+  .AboutOurPassion > .layoutFlow > .elTextCopy {
     position: relative;
     margin-top: 10px;
     margin-left: 22px;
     margin-right: 23px;
     width: calc(100.0% - 45px);
   }
-  .Textopasion > .layoutFlow > .elTextCopy > * { 
+  .AboutOurPassion > .layoutFlow > .elTextCopy > * { 
     width: 100%;
   }
   
 
 
-  .Textopasion > .layoutFlow > .elImage2 {
+  .AboutOurPassion > .layoutFlow > .elImage {
     position: relative;
     margin-top: 8px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
+    margin-left: 22px;
+    margin-right: 23px;
+    width: calc(100.0% - 45px);
   }
-  .Textopasion > .layoutFlow > .elImage2 > * { 
+  .AboutOurPassion > .layoutFlow > .elImage > * { 
     width: 100%;
-  height: 270px;
   }
   
 
 
-  .Textopasion > .layoutFlow > .elTextCopy2 {
+  .AboutOurPassion > .layoutFlow > .elTextCopy2 {
     position: relative;
     margin-top: 10px;
     margin-left: 22px;
     margin-right: 23px;
     width: calc(100.0% - 45px);
   }
-  .Textopasion > .layoutFlow > .elTextCopy2 > * { 
+  .AboutOurPassion > .layoutFlow > .elTextCopy2 > * { 
     width: 100%;
   }
   
@@ -1596,7 +1570,7 @@
 /* Narrowest size for this element's responsive layout */
   .StartScreen > .layoutFlow > .elTeamPics {
     position: relative;
-    margin-top: 0px;
+    margin-top: -18px;
     margin-left: 9px;
     margin-right: calc(4.0% + 0px);
     width: calc(96.0% - 9px);
@@ -1608,7 +1582,7 @@
 @media (min-width: 568px) {
   .StartScreen > .layoutFlow > .elTeamPics {
     position: relative;
-    margin-top: 0px;
+    margin-top: -18px;
     margin-left: 9px;
     margin-right: calc(4.0% + 0px);
     width: calc(96.0% - 9px);
@@ -1621,7 +1595,7 @@
 @media (min-width: 768px) {
   .StartScreen > .layoutFlow > .elTeamPics {
     position: relative;
-    margin-top: 0px;
+    margin-top: -18px;
     margin-left: 9px;
     margin-right: calc(4.0% + 0px);
     width: calc(96.0% - 9px);
@@ -1634,7 +1608,7 @@
 @media (min-width: 1024px) {
   .StartScreen > .layoutFlow > .elTeamPics {
     position: relative;
-    margin-top: 0px;
+    margin-top: -18px;
     margin-left: 9px;
     margin-right: calc(4.0% + 0px);
     width: calc(96.0% - 9px);
@@ -1842,7 +1816,7 @@
 /* Narrowest size for this element's responsive layout */
   .StartScreen > .layoutFlow > .elWhatWeDo {
     position: relative;
-    margin-top: -2px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1854,7 +1828,7 @@
 @media (min-width: 568px) {
   .StartScreen > .layoutFlow > .elWhatWeDo {
     position: relative;
-    margin-top: -2px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1867,7 +1841,7 @@
 @media (min-width: 768px) {
   .StartScreen > .layoutFlow > .elWhatWeDo {
     position: relative;
-    margin-top: -2px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1880,7 +1854,7 @@
 @media (min-width: 1024px) {
   .StartScreen > .layoutFlow > .elWhatWeDo {
     position: relative;
-    margin-top: -2px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1994,7 +1968,7 @@
   }
   
   .StartScreen > .layoutFlow > .elAboutOurPassion > .background > .containerMinHeight {
-    min-height: 557px;
+    min-height: 442px;
   }
 
 @media (min-width: 568px) {
@@ -2010,7 +1984,7 @@
   }
   
   .StartScreen > .layoutFlow > .elAboutOurPassion > .background > .containerMinHeight {
-    min-height: 557px;
+    min-height: 442px;
   }
 
 }
@@ -2027,7 +2001,7 @@
   }
   
   .StartScreen > .layoutFlow > .elAboutOurPassion > .background > .containerMinHeight {
-    min-height: 554px;
+    min-height: 439px;
   }
 
 }
@@ -2044,7 +2018,7 @@
   }
   
   .StartScreen > .layoutFlow > .elAboutOurPassion > .background > .containerMinHeight {
-    min-height: 554px;
+    min-height: 439px;
   }
 
 }
@@ -2562,4 +2536,514 @@
     height: 49px;
   }
 }
+
+
+/* Narrowest size for this element's responsive layout */
+  .LoginScreen > .background > .elBackground {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+@media (min-width: 568px) {
+  .LoginScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .LoginScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .LoginScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .LoginScreen > .layoutFlow > .elText {
+    overflow: hidden;
+    position: relative;
+    margin-top: 244px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elText > * { 
+    width: 100%;
+  }
+  
+@media (min-width: 568px) {
+  .LoginScreen > .layoutFlow > .elText {
+    overflow: hidden;
+    position: relative;
+    margin-top: 244px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elText > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LoginScreen > .layoutFlow > .elText {
+    overflow: hidden;
+    position: relative;
+    margin-top: 242px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elText > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LoginScreen > .layoutFlow > .elText {
+    overflow: hidden;
+    position: relative;
+    margin-top: 242px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elText > * { 
+    width: 100%;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .LoginScreen > .layoutFlow > .elImage {
+    position: relative;
+    margin-top: -272px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elImage > * { 
+    width: 100%;
+  height: 268px;
+  }
+  
+@media (min-width: 568px) {
+  .LoginScreen > .layoutFlow > .elImage {
+    position: relative;
+    margin-top: -272px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elImage > * { 
+    width: 100%;
+  height: 268px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LoginScreen > .layoutFlow > .elImage {
+    position: relative;
+    margin-top: -270px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elImage > * { 
+    width: 100%;
+  height: 266px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LoginScreen > .layoutFlow > .elImage {
+    position: relative;
+    margin-top: -270px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elImage > * { 
+    width: 100%;
+  height: 266px;
+  }
+  
+}
+
+.LoginScreen .elButton button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.LoginScreen .elButton button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .LoginScreen > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 270px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elButton > * { 
+    width: 100%;
+  height: 35px;
+  }
+  
+@media (min-width: 568px) {
+  .LoginScreen > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 270px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elButton > * { 
+    width: 100%;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LoginScreen > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 268px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elButton > * { 
+    width: 100%;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LoginScreen > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 268px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elButton > * { 
+    width: 100%;
+  height: 35px;
+  }
+  
+}
+
+.circularProgressIndicator {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.circularProgressIndicator-active {
+    animation: rotate 2s linear infinite;
+    display: inline;
+}
+.circularProgress-animatedPath {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    animation: circularProgress-dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+}
+@keyframes rotate{
+    100%{
+    transform: rotate(360deg);
+    }
+}
+@keyframes circularProgress-dash{
+    0%{
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+    50%{
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35;
+    }
+    100%{
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124;
+    }
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .LoginScreen > .layoutFlow > .elProgress {
+    position: relative;
+    margin-top: 0px;
+    width: 48px;
+    margin-left: 170px;
+  }
+  .LoginScreen > .layoutFlow > .elProgress > * { 
+  width: 48px;
+  }
+  
+@media (min-width: 568px) {
+  .LoginScreen > .layoutFlow > .elProgress {
+    position: relative;
+    margin-top: 0px;
+    width: 48px;
+    margin-left: 170px;
+  }
+  .LoginScreen > .layoutFlow > .elProgress > * { 
+  width: 48px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LoginScreen > .layoutFlow > .elProgress {
+    position: relative;
+    margin-top: 0px;
+    width: 47px;
+    margin-left: 169px;
+  }
+  .LoginScreen > .layoutFlow > .elProgress > * { 
+  width: 47px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LoginScreen > .layoutFlow > .elProgress {
+    position: relative;
+    margin-top: 0px;
+    width: 47px;
+    margin-left: 169px;
+  }
+  .LoginScreen > .layoutFlow > .elProgress > * { 
+  width: 47px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .LoginScreen > .layoutFlow > .elUserNameField {
+    position: relative;
+    margin-top: -200px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elUserNameField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+@media (min-width: 568px) {
+  .LoginScreen > .layoutFlow > .elUserNameField {
+    position: relative;
+    margin-top: -200px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elUserNameField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LoginScreen > .layoutFlow > .elUserNameField {
+    position: relative;
+    margin-top: -200px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elUserNameField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LoginScreen > .layoutFlow > .elUserNameField {
+    position: relative;
+    margin-top: -200px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elUserNameField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .LoginScreen > .layoutFlow > .elPasswordField {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elPasswordField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+@media (min-width: 568px) {
+  .LoginScreen > .layoutFlow > .elPasswordField {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elPasswordField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LoginScreen > .layoutFlow > .elPasswordField {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elPasswordField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LoginScreen > .layoutFlow > .elPasswordField {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LoginScreen > .layoutFlow > .elPasswordField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .LoginScreen > .screenFgContainer > .foreground > .elTextBlock {
+    overflow: hidden;
+    position: absolute;
+    left: 100px;
+    top: 423px;
+    width: 119px;
+    height: 25px;
+  }
+@media (min-width: 568px) {
+  .LoginScreen > .screenFgContainer > .foreground > .elTextBlock {
+    overflow: hidden;
+    left: 100px;
+    top: 423px;
+    width: 119px;
+    height: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .LoginScreen > .screenFgContainer > .foreground > .elTextBlock {
+    overflow: hidden;
+    left: 99px;
+    top: 420px;
+    width: 118px;
+    height: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .LoginScreen > .screenFgContainer > .foreground > .elTextBlock {
+    overflow: hidden;
+    left: 99px;
+    top: 420px;
+    width: 118px;
+    height: 24px;
+  }
+}
+
+/* This component has a fixed-size layout */
+  .Comp1 {
+    width: 100%; /* This component was designed using a width of 322px */
+    height: 100%;
+  }
+
+
+  .Comp1 > .layoutFlow > .elPasswordField {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .Comp1 > .layoutFlow > .elPasswordField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+/* This component has a fixed-size layout */
+  .Comp2 {
+    min-width: 322px; /* This component has a fixed size */
+  }
+
+.Comp2 .elComp {
+  overflow: hidden;
+}
+
+.Comp2 .elComp.hasNestedComps > div {
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+  .Comp2 > .layoutFlow > .elComp {
+    position: relative;
+    margin-top: 0px;
+    width: 322px;
+    margin-left: 0px;
+  }
+  .Comp2 > .layoutFlow > .elComp > * { 
+  width: 322px;
+  }
+  
 
