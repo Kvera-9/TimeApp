@@ -8,7 +8,7 @@ import './App.css';
 import StartScreen from './StartScreen.js';
 import Login1Screen from './Login1Screen.js';
 import DataSheet_localizationSheet from './DataSheet_localizationSheet.js';
-import DataSheet_propuestas from './DataSheet_propuestas.js';
+import DataSheet_team from './DataSheet_team.js';
 
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
 
     this.dataSheets = {};
     this.dataSheets['localizationSheet'] = new DataSheet_localizationSheet('localizationSheet', this.dataSheetDidUpdate);
-    this.dataSheets['propuestas'] = new DataSheet_propuestas('propuestas', this.dataSheetDidUpdate);
+    this.dataSheets['team'] = new DataSheet_team('team', this.dataSheetDidUpdate);
     this.dataSheetLoaded = {};
 
     this.dataSlots = {};

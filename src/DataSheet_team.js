@@ -20,23 +20,23 @@ export default class DataSheet_team extends DataSheetBase {
     
     item = {};
     this.items.push(item);
-    item['name'] = "Gabrielle";
+    item['name'] = "Gabriela ";
     item['image'] = datasheet_team_row0_image;
-    item['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum.";
+    item['description'] = "Ofrezco clases de inglés de 1 hora.";
     item.key = key++;
     
     item = {};
     this.items.push(item);
-    item['name'] = "Samantha";
+    item['name'] = "Natalia";
     item['image'] = datasheet_team_row1_image;
-    item['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum.";
+    item['description'] = "Ofrezco clases de Ruso de 1 hora.";
     item.key = key++;
     
     item = {};
     this.items.push(item);
     item['name'] = "Erika";
     item['image'] = datasheet_team_row2_image;
-    item['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum.";
+    item['description'] = "Ofrezco clases de  matemáticas de 1 hora.";
     item.key = key++;
   }
 
