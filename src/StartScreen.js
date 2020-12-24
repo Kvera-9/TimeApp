@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Eslogan from './Eslogan';
-import Razón from './Razón';
-import NuestroEquipo from './NuestroEquipo';
-import Servicios from './Servicios';
-import NuestraMisión from './NuestraMisión';
-import Idea from './Idea';
-import Pksi from './Pksi';
-import NuestraPasión from './NuestraPasión';
+import Slogantop from './Slogantop';
+import WereThirsty from './WereThirsty';
+import OurTeam from './OurTeam';
+import TeamMember from './TeamMember';
+import OurMission from './OurMission';
+import WhatWeDo from './WhatWeDo';
+import HowWeDoIt from './HowWeDoIt';
+import OurPassion from './OurPassion';
 import AboutOurPassion from './AboutOurPassion';
-import Regístrate from './Regístrate';
+import ContactUs from './ContactUs';
 import Map from './Map';
 import SocialLinks from './SocialLinks';
 import btn_icon_625800 from './images/btn_icon_625800.png';
@@ -31,7 +31,7 @@ export default class StartScreen extends Component {
     
     this.state = {
       elMenu_visible: false,
-      elMenuUp_visible: true,
+      elMenuUp_visible: false,
       elMenuDown_visible: true,
     };
   }
@@ -83,7 +83,7 @@ export default class StartScreen extends Component {
     }
     
     // eslint-disable-next-line
-    const dataSheet_team = this.props.dataSheets['team'];
+    const dataSheet_propuestas = this.props.dataSheets['propuestas'];
     
     const style_elBackgroundShape = {
       background: 'rgba(255, 255, 255, 1.000)',
@@ -92,7 +92,7 @@ export default class StartScreen extends Component {
     // Source items and any special components used for list/grid element 'Team pics'.
     let items_teamPics = [];
     let listComps_teamPics = {};
-    items_teamPics = items_teamPics.concat(this.props.appActions.getDataSheet('team').items);
+    items_teamPics = items_teamPics.concat(this.props.appActions.getDataSheet('propuestas').items);
     this._elTeamPics_items = [];
     
     const style_elTeamPics = {
@@ -168,19 +168,19 @@ export default class StartScreen extends Component {
         <div className="layoutFlow" style={layoutFlowStyle}>
           <div className="hasNestedComps elSlogantop">
             <div>
-              <Eslogan {...this.props} ref={(el)=> this._elSlogantop = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <Slogantop {...this.props} ref={(el)=> this._elSlogantop = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
           <div className="hasNestedComps elJoinUs">
             <div>
-              <Razón {...this.props} ref={(el)=> this._elJoinUs = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <WereThirsty {...this.props} ref={(el)=> this._elJoinUs = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
           <div className="hasNestedComps elTeamHeadline">
             <div>
-              <NuestroEquipo {...this.props} ref={(el)=> this._elTeamHeadline = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <OurTeam {...this.props} ref={(el)=> this._elTeamHeadline = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
@@ -189,7 +189,7 @@ export default class StartScreen extends Component {
               {items_teamPics.map((row, index) => {
                 let itemComp = (row._componentId)
                     ? listComps_teamPics[row._componentId]
-                    : <Servicios appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} dataSheetId={'team'} dataSheetRow={row} {...{ 'name': row['name'], 'description': row['description'], }} ref={(el) => {if (el) this._elTeamPics_items.push(el)}} />;
+                    : <TeamMember appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} dataSheetId={'propuestas'} dataSheetRow={row} {...{ 'name': row['name'], 'description': row['description'], 'image': row['image'], }} ref={(el) => {if (el) this._elTeamPics_items.push(el)}} />;
                 return (<div key={row.key}>
                     {itemComp}
                   </div>);
@@ -200,24 +200,24 @@ export default class StartScreen extends Component {
           
           <div className="hasNestedComps elOurMission">
             <div>
-              <NuestraMisión {...this.props} ref={(el)=> this._elOurMission = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <OurMission {...this.props} ref={(el)=> this._elOurMission = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
           <div className="hasNestedComps elWhatWeDo">
             <div>
               <div className="col0">
-                <Idea appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+                <WhatWeDo appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
               </div>
               <div className="col1">
-                <Pksi appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+                <HowWeDoIt appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
               </div>
             </div>
           </div>
           
           <div className="hasNestedComps elOurPassion">
             <div>
-              <NuestraPasión {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <OurPassion {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
@@ -229,7 +229,7 @@ export default class StartScreen extends Component {
           
           <div className="hasNestedComps elContactUs">
             <div>
-              <Regístrate {...this.props} ref={(el)=> this._elContactUs = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <ContactUs {...this.props} ref={(el)=> this._elContactUs = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           

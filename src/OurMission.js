@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import img_elLogowhite from './images/Logo_elLogowhite_200495.png';
 
-export default class Logo extends Component {
+export default class OurMission extends Component {
 
   // This component doesn't use any properties
 
@@ -27,27 +26,22 @@ export default class Logo extends Component {
     const style_elBackgroundShape = {
       background: 'rgba(169, 234, 11, 1.000)',
      };
-    const style_elLogowhite = {
-      backgroundImage: 'url('+img_elLogowhite+')',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50% 50%',
-      backgroundSize: 'cover',
-     };
-    
-    const style_elRectangle = {
-      background: 'rgba(254, 255, 255, 1.000)',
-      display: 'none',
+    const style_elTextBlock = {
+      fontSize: 30.1,
+      color: '#feffff',
+      textAlign: 'center',
      };
     
     return (
-      <div className="Logo">
+      <div className="OurMission">
         <div className="background">
           <div className="containerMinHeight elBackgroundShape" style={style_elBackgroundShape} />
         </div>
         
         <div className="foreground">
-          <div className="elLogowhite" style={style_elLogowhite} />
-          <div className="elRectangle" style={style_elRectangle} />
+          <div className="font-AppleSystemUIFont  elTextBlock" style={style_elTextBlock}>
+            <div>{this.props.locStrings.ourmission_textblock_401318}</div>
+          </div>
         </div>
       </div>
     )

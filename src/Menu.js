@@ -9,14 +9,6 @@ export default class Menu extends Component {
     super(props);
     
     this.state = {
-      text: (<div>Inicio</div>),
-      text_plainText: "Inicio",
-      textcopy4: (<div>Registro</div>),
-      textcopy4_plainText: "Registro",
-      textcopy2: (<div>Login</div>),
-      textcopy2_plainText: "Login",
-      textcopy3: (<div>Sobre Nosotros</div>),
-      textcopy3_plainText: "Sobre Nosotros",
     };
   }
 
@@ -29,9 +21,9 @@ export default class Menu extends Component {
   componentDidUpdate() {
   }
 
-  onClick_elTextCopy2 = (ev) => {
-    // Go to screen 'Login'
-    this.props.appActions.goToScreen('login', { transitionId: 'fadeIn' });
+  onClick_elTextCopy4 = (ev) => {
+    // Go to screen 'Login 1'
+    this.props.appActions.goToScreen('login1', { transitionId: 'fadeIn' });
   
   }
   
@@ -64,6 +56,8 @@ export default class Menu extends Component {
     const style_elTextCopy4 = {
       color: 'rgba(0, 0, 0, 0.8500)',
       textAlign: 'center',
+      cursor: 'pointer',
+      pointerEvents: 'auto',
      };
     
     const style_elLineCopy = {
@@ -72,8 +66,6 @@ export default class Menu extends Component {
     const style_elTextCopy2 = {
       color: 'rgba(0, 0, 0, 0.8500)',
       textAlign: 'center',
-      cursor: 'pointer',
-      pointerEvents: 'auto',
      };
     
     const style_elLineCopy2 = {
@@ -110,7 +102,7 @@ export default class Menu extends Component {
           
           <div className="elText">
             <div className="headlineFont" style={style_elText}>
-              <div>{this.state.text}</div>
+              <div>{this.props.locStrings.menu_text_935101}</div>
             </div>
           </div>
           
@@ -119,8 +111,8 @@ export default class Menu extends Component {
           </div>
           
           <div className="elTextCopy4">
-            <div className="headlineFont" style={style_elTextCopy4}>
-              <div>{this.state.textcopy4}</div>
+            <div className="headlineFont" style={style_elTextCopy4} onClick={this.onClick_elTextCopy4} >
+              <div>{this.props.locStrings.menu_textcopy4_586959}</div>
             </div>
           </div>
           
@@ -129,8 +121,8 @@ export default class Menu extends Component {
           </div>
           
           <div className="elTextCopy2">
-            <div className="headlineFont" style={style_elTextCopy2} onClick={this.onClick_elTextCopy2} >
-              <div>{this.state.textcopy2}</div>
+            <div className="headlineFont" style={style_elTextCopy2}>
+              <div>{this.props.locStrings.menu_textcopy2_954691}</div>
             </div>
           </div>
           
@@ -140,7 +132,7 @@ export default class Menu extends Component {
           
           <div className="elTextCopy3">
             <div className="headlineFont" style={style_elTextCopy3}>
-              <div>{this.state.textcopy3}</div>
+              <div>{this.props.locStrings.menu_textcopy3_778404}</div>
             </div>
           </div>
           

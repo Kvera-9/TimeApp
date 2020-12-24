@@ -13,10 +13,6 @@ export default class SocialLinks extends Component {
     super(props);
     
     this.state = {
-      copyright: (<div>2020 - TimeApp</div>),
-      copyright_plainText: "2020 - TimeApp",
-      credits: (<div> </div>),
-      credits_plainText: " ",
     };
   }
 
@@ -30,25 +26,25 @@ export default class SocialLinks extends Component {
   }
 
   onClick_elYouTube = (ev) => {
-    window.open('', '_blank');
+    window.open('https://www.youtube.com/channel/UCrcoH14H-MLS-MKxZGMwVGQ/', '_blank');
   
   }
   
   
   onClick_elInstagram = (ev) => {
-    window.open('', '_blank');
+    window.open('https://www.instagram.com/neonto.studio/', '_blank');
   
   }
   
   
   onClick_elSnapchat = (ev) => {
-    window.open('', '_blank');
+    window.open('https://twitter.com/neontostudio', '_blank');
   
   }
   
   
   onClick_elFacebook = (ev) => {
-    window.open('', '_blank');
+    window.open('https://www.facebook.com/neontostudio', '_blank');
   
   }
   
@@ -117,11 +113,11 @@ export default class SocialLinks extends Component {
           <img className="elSnapchat" style={style_elSnapchat} src={img_elSnapchat} alt="" onClick={this.onClick_elSnapchat}  />
           <img className="elFacebook" style={style_elFacebook} src={img_elFacebook} alt="" onClick={this.onClick_elFacebook}  />
           <div className="baseFont elCopyright" style={style_elCopyright}>
-            <div className="bottomAlignedContent">{this.state.copyright}</div>
+            <div className="bottomAlignedContent">{this.props.locStrings.sociallinks_copyright_1021741}</div>
           </div>
           <div className="actionFont elLink" style={style_elLink} onClick={this.onClick_elLink}  />
           <div className="baseFont elCredits" style={style_elCredits}>
-            <div>{this.state.credits}</div>
+            <div>{this.props.locStrings.sociallinks_credits_869374}</div>
           </div>
         </div>
       </div>

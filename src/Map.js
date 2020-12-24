@@ -9,8 +9,6 @@ export default class Map extends Component {
     super(props);
     
     this.state = {
-      text: (<div>Encuentra nuestra sede en Reus</div>),
-      text_plainText: "Encuentra nuestra sede en Reus",
     };
   }
 
@@ -56,7 +54,7 @@ export default class Map extends Component {
         
         <div className="foreground">
           <div className="headlineFont elText" style={style_elText}>
-            <div>{this.state.text}</div>
+            <div>{this.props.locStrings.map_text_895751}</div>
           </div>
         </div>
       </div>

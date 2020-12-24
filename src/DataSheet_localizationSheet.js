@@ -23,12 +23,12 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item = {};
     this.items.push(item);
     item['key'] = "slogantop_textcopy_323518";
-    item['en'] = "Contruyendo un futuro";
+    item['en'] = "Banco del tiempo";
     
     item = {};
     this.items.push(item);
     item['key'] = "werethirsty_text_422311";
-    item['en'] = "Bienvenido al banco de tiempo online";
+    item['en'] = "¿Alguna vez te habías planteado el hecho de que tu tiempo puede ser una moneda de cambio?\n";
     
     item = {};
     this.items.push(item);
@@ -43,12 +43,12 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item = {};
     this.items.push(item);
     item['key'] = "contactus_header_35473";
-    item['en'] = "Regístrate en el banco de tiempo";
+    item['en'] = "Contacta con el banco del tiempo";
     
     item = {};
     this.items.push(item);
     item['key'] = "contactus_sendbutton_558898";
-    item['en'] = "Enviar";
+    item['en'] = "Enviar\n";
     
     item = {};
     this.items.push(item);
@@ -63,32 +63,32 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item = {};
     this.items.push(item);
     item['key'] = "sociallinks_copyright_1021741";
-    item['en'] = "2020 - TimeApp";
+    item['en'] = "2020 TimeApp";
     
     item = {};
     this.items.push(item);
     item['key'] = "whatwedo_text_813963";
-    item['en'] = "What we do!";
+    item['en'] = "-El valor del tiempo!";
     
     item = {};
     this.items.push(item);
     item['key'] = "whatwedo_textcopy_755616";
-    item['en'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum. Vestibulum cursus, ipsum vel placerat tincidunt, felis orci porttitor orci, non ullamcorper arcu leo in enim. Morbi mattis tortor lectus, vitae interdum enim consequat sit amet. Quisque in arcu libero. Praesent eu elit arcu.";
+    item['en'] = "El tiempo es un valor al que muy a menudo no le damos la importancia que debería. Y es que éste es uno de los recursos más valiosos de los que disponemos, ya que una vez gastado no se puede volver a recuperar.\n";
     
     item = {};
     this.items.push(item);
     item['key'] = "howwedoit_text_381730";
-    item['en'] = "How we do it!";
+    item['en'] = "-El intercambio de habilidades y conocimientos.\n";
     
     item = {};
     this.items.push(item);
     item['key'] = "howwedoit_textcopy_850462";
-    item['en'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem ac diam aliquam condimentum. Vestibulum cursus, ipsum vel placerat tincidunt, felis orci porttitor orci, non ullamcorper arcu leo in enim. Morbi mattis tortor lectus, vitae interdum enim consequat sit amet. Quisque in arcu libero. Praesent eu elit arcu.";
+    item['en'] = "\nCada uno de nosotros tenemos una esencia que nos hace únicos. Siempre podemos aprender algo nuevo de los demás; nuestra sociedad se ha construido gracias a la cooperación y la transferencia de conocimientos. A partir de esta aplicación queremos poner en práctica esta filosofía y facilitar la vida de la gente.\n";
     
     item = {};
     this.items.push(item);
     item['key'] = "ourteam_textblock_1002658";
-    item['en'] = "¿Alguna vez te has planteado que tu tiempo puede ser una moneda de cambio?\n";
+    item['en'] = "¡Ultimas propuestas!";
     
     item = {};
     this.items.push(item);
@@ -98,7 +98,7 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item = {};
     this.items.push(item);
     item['key'] = "ourpassion_textblock_209810";
-    item['en'] = "Nuestra Pasión";
+    item['en'] = "Conoce nuestras categorías ";
     
     item = {};
     this.items.push(item);
@@ -108,17 +108,17 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item = {};
     this.items.push(item);
     item['key'] = "menu_textcopy4_586959";
-    item['en'] = "Registro";
+    item['en'] = "Inicia sesión ";
     
     item = {};
     this.items.push(item);
     item['key'] = "menu_textcopy2_954691";
-    item['en'] = "Login";
+    item['en'] = "Busca una propuesta";
     
     item = {};
     this.items.push(item);
     item['key'] = "menu_textcopy3_778404";
-    item['en'] = "Sobre Nosotros";
+    item['en'] = "Contáctanos ";
     
     item = {};
     this.items.push(item);
@@ -133,27 +133,12 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item = {};
     this.items.push(item);
     item['key'] = "map_text_895751";
-    item['en'] = "We’re based in Silicon Valley";
+    item['en'] = "Encuentra a la gente mas cercana!";
     
     item = {};
     this.items.push(item);
-    item['key'] = "login1_text_241076";
-    item['en'] = "Bienvenido a la era del tiempo";
-    
-    item = {};
-    this.items.push(item);
-    item['key'] = "login1_validator_772924";
-    item['en'] = " ";
-    
-    item = {};
-    this.items.push(item);
-    item['key'] = "login1_button_137024";
-    item['en'] = "Ir a la pagina de inicio";
-    
-    item = {};
-    this.items.push(item);
-    item['key'] = "login_textblock_833318";
-    item['en'] = " ";
+    item['key'] = "login1_button_1004251";
+    item['en'] = "Login";
     
     let storedItems = localStorage.getItem(this.id);
     if (storedItems != null) {
