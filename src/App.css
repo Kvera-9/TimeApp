@@ -882,18 +882,18 @@
   }
 
 /* This component has a fixed-size layout */
-  .OurPassion {
+  .NeontoExport0x7f9a5cda3b50 {
     min-height: 87px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 186px */
     height: 100%;
   }
-  .OurPassion > .background > .containerMinHeight {
+  .NeontoExport0x7f9a5cda3b50 > .background > .containerMinHeight {
     min-height: 87px;
   }
 
 
-  .OurPassion > .background > .elBackgroundShape {
+  .NeontoExport0x7f9a5cda3b50 > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -903,7 +903,7 @@
   }
 
 
-  .OurPassion > .foreground > .elTextBlock {
+  .NeontoExport0x7f9a5cda3b50 > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
     left: 0px;
@@ -2813,6 +2813,59 @@
   .Login1Screen > .layoutFlow > .elButton > * { 
     width: 100%;
   height: 35px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Login1Screen > .layoutFlow > .elFirebaseLogin {
+    position: relative;
+    margin-top: 34px;
+    width: 207px;
+    margin-left: 54px;
+  }
+  .Login1Screen > .layoutFlow > .elFirebaseLogin > * { 
+  width: 207px;
+  height: 48px;
+  }
+  
+@media (min-width: 568px) {
+  .Login1Screen > .layoutFlow > .elFirebaseLogin {
+    position: relative;
+    margin-top: 34px;
+    width: 207px;
+    margin-left: 54px;
+  }
+  .Login1Screen > .layoutFlow > .elFirebaseLogin > * { 
+  width: 207px;
+  height: 48px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Login1Screen > .layoutFlow > .elFirebaseLogin {
+    position: relative;
+    margin-top: 34px;
+    width: 206px;
+    margin-left: 54px;
+  }
+  .Login1Screen > .layoutFlow > .elFirebaseLogin > * { 
+  width: 206px;
+  height: 47px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Login1Screen > .layoutFlow > .elFirebaseLogin {
+    position: relative;
+    margin-top: 34px;
+    width: 206px;
+    margin-left: 54px;
+  }
+  .Login1Screen > .layoutFlow > .elFirebaseLogin > * { 
+  width: 206px;
+  height: 47px;
   }
   
 }

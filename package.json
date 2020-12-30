@@ -1,5 +1,5 @@
 {
-  "name": "time",
+  "name": "corporate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,9 @@
     "react-localization": "^1.0.13",
     "react-router-dom": "^5.1.2",
     "react-scripts": "2.1.8",
-    "muicss": "^0.9.41"
+    "muicss": "^0.9.41",
+    "react-firebaseui": "^4.0.0",
+    "firebase": "~7.5.0"
   },
   "scripts": {
     "start": "PORT=3000 react-scripts start",

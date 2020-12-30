@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import img_elImage from './images/AboutOurPassion_elImage_689574.jpg';
+import img_elImage from './images/AboutOurPassion_elImage_689574.png';
 
 export default class AboutOurPassion extends Component {
 

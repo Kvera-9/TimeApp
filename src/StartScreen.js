@@ -7,7 +7,7 @@ import TeamMember from './TeamMember';
 import OurMission from './OurMission';
 import WhatWeDo from './WhatWeDo';
 import HowWeDoIt from './HowWeDoIt';
-import OurPassion from './OurPassion';
+import NeontoExport0x7f9a5cda3b50 from './NeontoExport0x7f9a5cda3b50';
 import AboutOurPassion from './AboutOurPassion';
 import ContactUs from './ContactUs';
 import Map from './Map';
@@ -217,7 +217,7 @@ export default class StartScreen extends Component {
           
           <div className="hasNestedComps elOurPassion">
             <div>
-              <OurPassion {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <NeontoExport0x7f9a5cda3b50 {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           

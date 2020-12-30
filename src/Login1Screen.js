@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Logo from './Logo';
+import FirebaseLogin from './FirebaseLogin';
 import img_elImage2 from './images/Login1Screen_elImage2_274201.png';
 
 // UI framework component imports
@@ -105,6 +106,9 @@ export default class Login1Screen extends Component {
       cursor: 'pointer',
       pointerEvents: 'auto',
      };
+    const style_elFirebaseLogin = {
+      pointerEvents: 'auto',
+     };
     
     const style_elField4 = {
       display: 'block',
@@ -157,6 +161,12 @@ export default class Login1Screen extends Component {
             <Button className="actionFont" style={style_elButton} onClick={this.onClick_elButton} >
               {this.props.locStrings.login1_button_1004251}
             </Button>
+          </div>
+          
+          <div className="elFirebaseLogin">
+            <div style={style_elFirebaseLogin}>
+              <FirebaseLogin ref={(el)=> this._elFirebaseLogin = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+            </div>
           </div>
           
           <div className="elField4">
