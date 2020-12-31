@@ -7,7 +7,7 @@ import TeamMember from './TeamMember';
 import OurMission from './OurMission';
 import WhatWeDo from './WhatWeDo';
 import HowWeDoIt from './HowWeDoIt';
-import NeontoExport0x7fa4909a1710 from './NeontoExport0x7fa4909a1710';
+import Com1 from './Com1';
 import AboutOurPassion from './AboutOurPassion';
 import ContactUs from './ContactUs';
 import Map from './Map';
@@ -217,7 +217,7 @@ export default class StartScreen extends Component {
           
           <div className="hasNestedComps elOurPassion">
             <div>
-              <NeontoExport0x7fa4909a1710 {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <Com1 {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           
