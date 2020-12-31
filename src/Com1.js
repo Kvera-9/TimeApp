@@ -3,8 +3,6 @@ import './App.css';
 
 export default class Com1 extends Component {
 
-  // This component doesn't use any properties
-
   constructor(props) {
     super(props);
     
