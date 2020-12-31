@@ -7,7 +7,7 @@ import TeamMember from './TeamMember';
 import OurMission from './OurMission';
 import WhatWeDo from './WhatWeDo';
 import HowWeDoIt from './HowWeDoIt';
-import Componentes from './Componentes';
+import NeontoExport0x7fa4909a1710 from './NeontoExport0x7fa4909a1710';
 import AboutOurPassion from './AboutOurPassion';
 import ContactUs from './ContactUs';
 import Map from './Map';
@@ -83,7 +83,7 @@ export default class StartScreen extends Component {
     }
     
     // eslint-disable-next-line
-    const dataSheet_team = this.props.dataSheets['team'];
+    const dataSheet_propuestas = this.props.dataSheets['propuestas'];
     
     const style_elBackgroundShape = {
       background: 'rgba(255, 255, 255, 1.000)',
@@ -92,7 +92,7 @@ export default class StartScreen extends Component {
     // Source items and any special components used for list/grid element 'Team pics'.
     let items_teamPics = [];
     let listComps_teamPics = {};
-    items_teamPics = items_teamPics.concat(this.props.appActions.getDataSheet('team').items);
+    items_teamPics = items_teamPics.concat(this.props.appActions.getDataSheet('propuestas').items);
     this._elTeamPics_items = [];
     
     const style_elTeamPics = {
@@ -189,7 +189,7 @@ export default class StartScreen extends Component {
               {items_teamPics.map((row, index) => {
                 let itemComp = (row._componentId)
                     ? listComps_teamPics[row._componentId]
-                    : <TeamMember appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} dataSheetId={'team'} dataSheetRow={row} {...{ 'name': row['name'], 'description': row['description'], 'image': row['image'], }} ref={(el) => {if (el) this._elTeamPics_items.push(el)}} />;
+                    : <TeamMember appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} dataSheetId={'propuestas'} dataSheetRow={row} {...{ 'name': row['name'], 'description': row['description'], 'image': row['image'], }} ref={(el) => {if (el) this._elTeamPics_items.push(el)}} />;
                 return (<div key={row.key}>
                     {itemComp}
                   </div>);
@@ -217,7 +217,7 @@ export default class StartScreen extends Component {
           
           <div className="hasNestedComps elOurPassion">
             <div>
-              <Componentes {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+              <NeontoExport0x7fa4909a1710 {...this.props} ref={(el)=> this._elOurPassion = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
             </div>
           </div>
           

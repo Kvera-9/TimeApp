@@ -8,7 +8,9 @@ import './App.css';
 import StartScreen from './StartScreen.js';
 import Login1Screen from './Login1Screen.js';
 import DataSheet_localizationSheet from './DataSheet_localizationSheet.js';
-import DataSheet_team from './DataSheet_team.js';
+import DataSheet_propuestas from './DataSheet_propuestas.js';
+import firebase from 'firebase';
+import firestore from 'firebase/firestore';
 
 
 class App extends Component {
@@ -17,13 +19,27 @@ class App extends Component {
 
     this.dataSheets = {};
     this.dataSheets['localizationSheet'] = new DataSheet_localizationSheet('localizationSheet', this.dataSheetDidUpdate);
-    this.dataSheets['team'] = new DataSheet_team('team', this.dataSheetDidUpdate);
+    this.dataSheets['propuestas'] = new DataSheet_propuestas('propuestas', this.dataSheetDidUpdate);
     this.dataSheetLoaded = {};
 
     this.dataSlots = {};
     this.dataSlots['ds_activeLang'] = "en";
 
     this.updateLocalizationFromDataSheet(this.dataSheets['localizationSheet']);
+
+
+    // Initialize web service plugin 'firebase 1'
+    firebase.initializeApp({
+        "apiKey": "AIzaSyAD8MVWQ9YkH8o3vDk5ufRpxm4z_z5bFEQ",
+        "authDomain": "timeapp-ba917.firebaseapp.com",
+        "projectId": "timeapp-ba917",
+        "storageBucket": "timeapp-ba917.appspot.com",
+        "messagingSenderId": "525856851894",
+        "appId": "1:525856851894:web:63378bb25a368cde9e2317",
+        "measurementId": "G-K471WDHK1Q"
+      };);
+    firebase.firestore().settings({});
+    
 
     this.state = {
       screenTransitionForward: true,

@@ -882,18 +882,18 @@
   }
 
 /* This component has a fixed-size layout */
-  .Componentes {
+  .NeontoExport0x7fa4909a1710 {
     min-height: 87px;  /* This component has a fixed size */
     overflow: hidden;
     width: 100%; /* This component was designed using a width of 186px */
     height: 100%;
   }
-  .Componentes > .background > .containerMinHeight {
+  .NeontoExport0x7fa4909a1710 > .background > .containerMinHeight {
     min-height: 87px;
   }
 
 
-  .Componentes > .background > .elBackgroundShape {
+  .NeontoExport0x7fa4909a1710 > .background > .elBackgroundShape {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -903,7 +903,7 @@
   }
 
 
-  .Componentes > .foreground > .elTextBlock {
+  .NeontoExport0x7fa4909a1710 > .foreground > .elTextBlock {
     overflow: hidden;
     position: absolute;
     left: 0px;
